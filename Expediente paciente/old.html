@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style_expaciente.css" />
+    <script src="node_module/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Creacion de registro paciente</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="row " action="datos_expaciente.php" method="POST">
+            <h1>Creación Expediente Paciente</h1>
+
+            <div class="col- 6">
+                <label for="namelInput" class="form-label">Id Paciente</label>
+                <input type="number" class="form-control" name="id" placeholder="Escriba el Id">
+            </div>
+
+            <div class="col- 6">
+                <label for="namelInput" class="form-label">Primer Nombre</label>
+                <input type="text" class="form-control" name="nombre" placeholder="Escriba su Primer Nombre">
+            </div>
+            
+            <div class="col- 6">
+                <label for="LastNInput" class="form-label">Primer Apellido</label>
+                <input type="text" class="form-control" name="apellido" placeholder="Escriba su Primer Apellido">
+            </div>
+
+            <div class="col- 6">
+                <label for="mailInput" class="form-label">E-mail</label>
+                <input type="mail" class="form-control" name="correo" placeholder="Email">
+            </div>
+
+            <div class="col- 6">
+                <label for="fechanac" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" name="fechanac" placeholder="Escriba su fecha de nacimientos">
+            </div>
+
+            <div class="col- 6">
+                <label for="edadlInput" class="form-label">Edad</label>
+                <input type="number" class="form-control" name="edad" placeholder="Escriba su edad">
+            </div>
+
+            <div class="col- 6">
+                <label for="genInput" class="form-label">Genero</label>
+                <input type="text" class="form-control" name="genero" placeholder="Escriba su Genero">
+            </div>
+
+            <div class="col- 6">
+                <label for="telInput" class="form-label">Telefono de contacto</label>
+                <input type="tel" class="form-control" name="telefono" placeholder="Escriba su Telefono">
+            </div>
+
+            <div class="col- 6">
+                <label for="bloodInput" class="form-label">Tipo de Sangre</label>
+                <input type="text" class="form-control" name="sangre" placeholder="Escriba su Tipo de Sangre">
+            </div>
+
+             <div class="col-12">
+                <button type="submit" class="btn btn-primary">
+                    Guardar
+                </button>
+             </div>
+
+
+        </form>
+        
+    </div>
+
+    
+</body>
+
+</html>

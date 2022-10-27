@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style_ficha.css">
+  <title>Ficha Medica</title>
+</head>
+
+
+<body>
+
+  <ul>
+    <li><a class="active" href="../dashboard_admin/dashboard.html">Dashboard</a></li>
+    <li><a href="../Ficha Medica/ficha_medica.html">Ficha Medica</a></li>
+    <li><a href="../Expediente paciente/ex_paciente.html">Expediente Paciente</a></li>
+    <li><a href="../Farmacia/farmacia.php">Farmacia</a></li>
+  </ul>
+
+  <form class="form-register" action="datos_ficha.php" method="POST">
+    <h4>Creación Ficha Medica</h4>
+    <input class="controls" type="number" name="id_ficha" id="id_ficha" placeholder="ID Ficha">
+    <input class="controls" type="date" name="fecha_vis" id="fecha_vis" placeholder="Fecha de la Visita">
+    <input class="controls" type="text" name="motivo" id="motivo" placeholder="Motivo de la Visita">
+    <input class="controls" type="number" name="id_medico" id="id_medico" placeholder="ID Medico">
+    <input class="controls" type="text" name="nombre_doc" id="nombre_doc" placeholder="Nombre Medico">
+    <input class="controls" type="number" name="id_paciente" id="id_paciente" placeholder="ID Paciente">
+    <input class="controls" type="text" name="nomPaciente" id="nomPaciente" placeholder="Nombre Paciente">
+    <textarea class="controls" type="text" name="examenes" id="examenes" placeholder="Examenes Realizados"></textarea>
+    <textarea class="controls" type="text" name="resulexam" id="resulexam" placeholder="Resultados Examenes Realizados"></textarea>
+    <textarea class="controls" type="text" name="diagnostico" id="diagnostico" placeholder="Diagnostico"></textarea>
+
+    <select class="controls" type="text" name="medicamento" id="diagnostico" placeholder="Diagnostico">
+        <option></option>
+                    <option>Cardiología</option>
+                    <option>Geriatría</option>
+                    <option>Nefrología</option>
+                    <option>Reumatología</option>
+                    <option>Psiquiatría</option>
+                    <option>Rehabilitación</option>
+                    <option>Oftalmología</option>
+                    <option>Inmunología</option>
+                    <option>Urología</option>
+                  </select>
+
+    <input class="controls" type="text" name="dosis" id="dosis" placeholder="Dosis">
+    <input class="controls" type="text" name="tiempoapli" id="tiempoapli" placeholder="Tiempo Aplicacion">
+    <textarea class="controls" type="text" name="observacion" id="observacion" placeholder="Observaciones"></textarea>
+    <input class="botons" type="submit" value="Guardar Datos">
+  </form>
+
+</body>
+</html>

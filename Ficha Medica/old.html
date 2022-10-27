@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style_fmedica.css" />
+    <script src="node_module/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Ficha Medica</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="row " action="datos_ficha.php" method="POST">
+            <h1>Creación Ficha Medica</h1>
+
+            <div class="col- 6">
+                <label for="IdFicha" class="form-label">Id Ficha</label>
+                <input type="number" class="form-control" name="id_ficha" placeholder="Id Ficha"> 
+            </div>
+
+            <div class="col- 6">
+                <label for="fechalInput" class="form-label">Fecha de visita</label>
+                <input type="date" class="form-control" name="fecha_vis" placeholder="Fecha de visita">
+            
+                <label for="motilInput" class="form-label">Motivo de la visita</label>
+                <select  name="motivo" id="">
+                    <option>Consulta</option>
+                    <option>Seguimiento</option>
+                    <option>Emergencia</option>
+                </select>
+
+                <label for="medInput" class="form-label">ID Medico</label>
+                <input type="text" class="form-control" name="id_medico" placeholder="ID Medico">
+                
+                <label for="medInput" class="form-label">Medico Tratante</label>
+                <input type="text" class="form-control" name="nombre_doc" placeholder="Nombre del Medico">
+                
+            </div> 
+
+            <div class="col- 6">
+
+                    <label for="IdPaciente" class="form-label">Id Paciente</label>
+                    <input type="number" class="form-control" name="id_paciente" placeholder="Id Paciente">  
+
+                    <label for="nomPaciente" class="form-label">Nombre Paciente</label>
+                    <input type="text" class="form-control" name="nom_paciente" placeholder="Nombre Paciente"> 
+
+            </div>  
+
+            <div><label for="examlInput" class="form-label">Examenes realizados</label></div>    
+            <div>
+                <textarea name="examenes" cols="45" rows="10" placeholder="Examenes Realizados"></textarea>
+            </div>
+            
+            <div><label for="examlInput" class="form-label">Resultados de examenes realizados</label></div> 
+            <div>   
+                <textarea name="resulexam" cols="45" rows="10" placeholder="Resultado Realizados"></textarea>
+            </div>
+            
+            <div> <label for="diagInput" class="form-label">Diagnostico</label></div>
+            <div>
+                <textarea name="diagnostico" cols="45" rows="10" placeholder="Diagnostico"></textarea>
+            </div>
+
+            <label for="IdMedicamento" class="form-label">Id Medicamento</label>
+                    <input type="number" class="form-control" name="id_medicamento" placeholder="Id Medicamento">
+            <div class="col- 6">
+                <label for="medicamentolInput" class="form-label">Medicamento</label>
+                <select name="medica1" id="">
+                    <option></option>
+                    <option>Cardiología</option>
+                    <option>Geriatría</option>
+                    <option>Nefrología</option>
+                    <option>Reumatología</option>
+                    <option>Psiquiatría</option>
+                    <option>Rehabilitación</option>
+                    <option>Oftalmología</option>
+                    <option>Inmunología</option>
+                    <option>Urología</option>
+                </select>
+                
+                <label for="dosisInput" class="form-label">Dosis</label>
+                <input type="text" class="form-control" name="dosis" placeholder="Dosis">
+
+                <label for="tiemInput" class="form-label">Tiempo de aplicacion</label>
+                <input type="text" class="form-control" name="tiempoapli" placeholder="Tiempo de aplicación">
+              
+            </div>
+            
+
+            <div><label for="observlInput" class="form-label">Observaciones Medicas</label></div> 
+            <div>   
+                <textarea name="observaciones" cols="45" rows="10" placeholder="Observaciones Medicas"></textarea>
+            </div>
+                
+            <div class="col-12">
+                <button type="submit" class="btn">
+                    Guardar Datos
+                </button>
+             </div>
+
+            </form>
+        
+    </div>
+
+    
+</body>
+
+</html>
